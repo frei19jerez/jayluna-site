@@ -1,0 +1,228 @@
+/* ============================================================
+   Jay Luna Oficial - Estilo general (Reguetón Urbano)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+:root {
+  --primary: #ff004f;
+  --secondary: #00fff2;
+  --bg: #000000;
+  --text: #ffffff;
+  --gray: #cccccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ===============================
+   NAVBAR
+   =============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+
+nav a.active {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 3px;
+}
+
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+nav a {
+  color: var(--gray);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: var(--primary);
+}
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-bg iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  border: none;
+  object-fit: cover;
+}
+
+/* Si usas la imagen portada.jpg en lugar del video */
+.banner-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.hero-content {
+  color: var(--text);
+  padding: 20px;
+  z-index: 5;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--text);
+  text-shadow: 0 0 20px var(--primary), 0 0 40px var(--secondary);
+}
+
+.hero-content span {
+  color: var(--primary);
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+/* Botón principal */
+.btn-whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   SECCIONES INTERNAS
+   =============================== */
+.content {
+  max-width: 1000px;
+  margin: 120px auto 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--primary);
+}
+
+.content p {
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+/* Galería */
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--primary);
+}
+
+/* Eventos */
+.event-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.event-list li {
+  background: rgba(255,255,255,0.05);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  color: var(--gray);
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+footer {
+  background: #111;
+  color: var(--gray);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
