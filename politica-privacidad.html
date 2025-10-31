@@ -4,28 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad - Jay Luna Oficial</title>
+
+  <!-- Estilos globales -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">Jay <span>Luna</span></div>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
+      <a href="musica.html">Música</a>
+      <a href="galeria.html">Galería</a>
+      <a href="eventos.html">Eventos</a>
       <a href="contacto.html">Contacto</a>
+      <a href="politica-privacidad.html" class="active">Privacidad</a>
     </nav>
   </header>
 
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
   <section class="content">
     <h2>Política de Privacidad</h2>
-    <p>Jay Luna Oficial respeta tu privacidad. Esta página no recopila información personal sin tu consentimiento.
-       Si nos contactas mediante formularios o enlaces, tus datos serán utilizados únicamente para responderte.</p>
-    <p>El sitio puede contener enlaces a YouTube, Spotify u otras plataformas externas, las cuales tienen sus propias políticas de privacidad.</p>
+    <p>
+      Jay Luna Oficial respeta tu privacidad. Este sitio web no recopila información personal sin tu consentimiento.
+      Si te comunicas con nosotros mediante formularios o enlaces, tus datos se utilizarán únicamente para responder a tu solicitud.
+    </p>
+    <p>
+      El sitio puede contener enlaces a plataformas externas como YouTube, Spotify o redes sociales.
+      Cada una de ellas cuenta con sus propias políticas de privacidad, ajenas a las de este sitio.
+    </p>
+    <p>
+      Jay Luna Oficial se compromete a proteger tus datos personales y garantizar que no se compartan con terceros sin tu autorización.
+      Al usar este sitio, aceptas los términos de esta Política de Privacidad.
+    </p>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© <span id="year"></span> Jay Luna Oficial</p>
+    <p>© <span id="year"></span> Jay Luna Oficial — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Scripts globales -->
   <script src="js/year.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

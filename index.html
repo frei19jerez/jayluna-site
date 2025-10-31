@@ -6,7 +6,7 @@
   <meta name="description" content="Jay Luna Oficial - Artista de reguetón urbano. Escucha su música, mira sus videos y contáctalo para eventos.">
   <title>Jay Luna Oficial</title>
 
-  <!-- ✅ rutas relativas (no usar / al inicio) -->
+  <!-- ✅ rutas relativas -->
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -16,7 +16,16 @@
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">Jay <span>Luna</span></div>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navegación -->
+    <nav id="nav-menu">
       <a href="index.html" class="active">Inicio</a>
       <a href="biografia.html">Biografía</a>
       <a href="musica.html">Música</a>
@@ -30,14 +39,10 @@
   <section class="hero">
     <div class="overlay"></div>
 
-    <!-- 🎬 Video o banner de fondo -->
-   
-
-     Opción 2 (alternativa): Imagen local
+    <!-- 🎬 Imagen o video de fondo -->
     <div class="video-bg">
       <img src="img/jay-luna.png" alt="Jay Luna Oficial" class="banner-img">
     </div>
-    
 
     <!-- ===== CONTENIDO CENTRAL ===== -->
     <div class="hero-content">

@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventos - Jay Luna Oficial</title>
+
+  <!-- Estilos globales -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">Jay <span>Luna</span></div>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
       <a href="musica.html">Música</a>
@@ -19,17 +34,31 @@
     </nav>
   </header>
 
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
   <section class="content">
-    <h2>Próximos eventos</h2>
+    <h2>Próximos Eventos</h2>
+    <p>¡No te pierdas los próximos shows y lanzamientos de <strong>Jay Luna</strong>! 🔥</p>
+
     <ul class="event-list">
-      <li><strong>20 Dic 2025</strong> – Concierto en Medellín 🎤</li>
-      <li><strong>10 Ene 2026</strong> – Lanzamiento nuevo sencillo 💿</li>
+      <li><strong>20 Dic 2025</strong> — Concierto en Medellín 🎤</li>
+      <li><strong>10 Ene 2026</strong> — Lanzamiento del nuevo sencillo 💿</li>
+      <li><strong>05 Feb 2026</strong> — Presentación especial en Bogotá 🎶</li>
+      <li><strong>15 Mar 2026</strong> — Firma de autógrafos en Cali ✍️</li>
     </ul>
+
+    <p style="margin-top: 25px; color: #ccc;">Sigue las redes oficiales para más fechas y sorpresas 👇</p>
+
+    <a href="https://wa.me/573108395234?text=Hola%20Jay%20Luna%2C%20quiero%20saber%20más%20sobre%20tus%20eventos!"
+       class="btn-whatsapp">💬 Pregunta por entradas</a>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© <span id="year"></span> Jay Luna Oficial</p>
+    <p>© <span id="year"></span> Jay Luna Oficial — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Scripts globales -->
   <script src="js/year.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

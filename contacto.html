@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Jay Luna Oficial</title>
+
+  <!-- Estilos globales -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">Jay <span>Luna</span></div>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
       <a href="musica.html">Música</a>
@@ -19,17 +34,36 @@
     </nav>
   </header>
 
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
   <section class="content">
     <h2>Contacto</h2>
-    <p>Para contrataciones o colaboraciones, contáctame:</p>
+    <p>Para contrataciones, colaboraciones o prensa, contáctame directamente:</p>
+
+    <!-- Botón WhatsApp -->
     <a href="https://wa.me/573108395234?text=Hola%20Jay%20Luna%2C%20quiero%20hablar%20contigo!"
        class="btn-whatsapp">💬 Escríbeme por WhatsApp</a>
-    <p>O envía un correo a: <strong>contacto@jaylunaoficial.com</strong></p>
+
+    <!-- Email -->
+    <p style="margin-top:20px;">
+      O envía un correo a: <strong>contacto@jaylunaoficial.com</strong>
+    </p>
+
+    <!-- Redes sociales -->
+    <div style="margin-top:30px;">
+      <p>Sígueme en mis redes:</p>
+      <a href="#" style="color:#1DA1F2; text-decoration:none;">Twitter</a> |
+      <a href="#" style="color:#E1306C; text-decoration:none;">Instagram</a> |
+      <a href="#" style="color:#FF0000; text-decoration:none;">YouTube</a>
+    </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© <span id="year"></span> Jay Luna Oficial</p>
+    <p>© <span id="year"></span> Jay Luna Oficial — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Scripts globales -->
   <script src="js/year.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galería - Jay Luna Oficial</title>
+
+  <!-- Estilos globales -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">Jay <span>Luna</span></div>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
       <a href="musica.html">Música</a>
@@ -19,8 +34,11 @@
     </nav>
   </header>
 
+  <!-- ===== GALERÍA ===== -->
   <section class="content gallery">
     <h2>Galería</h2>
+    <p>Momentos destacados de <strong>Jay Luna</strong> en escenarios, estudios y sesiones fotográficas 🎬📸</p>
+
     <div class="grid">
       <img src="img/galeria/foto1.jpg" alt="Jay Luna 1">
       <img src="img/galeria/foto2.jpg" alt="Jay Luna 2">
@@ -29,9 +47,13 @@
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© <span id="year"></span> Jay Luna Oficial</p>
+    <p>© <span id="year"></span> Jay Luna Oficial — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Scripts globales -->
   <script src="js/year.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

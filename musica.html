@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Música - Jay Luna Oficial</title>
+
+  <!-- Estilos globales -->
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+  <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="logo">Jay <span>Luna</span></div>
-    <nav>
+
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav id="nav-menu">
       <a href="index.html">Inicio</a>
       <a href="biografia.html">Biografía</a>
       <a href="musica.html" class="active">Música</a>
@@ -19,18 +34,34 @@
     </nav>
   </header>
 
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
   <section class="content">
-    <h2>Escucha mi música</h2>
+    <h2>Escucha Mi Música 🎧</h2>
+    <p>Disfruta los últimos lanzamientos de <strong>Jay Luna Oficial</strong>.  
+       Suscríbete a su canal para más videos, beats y colaboraciones 🔥</p>
+
     <div class="video-list">
-      <iframe src="https://www.youtube.com/embed/vJlFz5oxG5Q" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/dRXkKsWqke8" frameborder="0" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/XXXXXXXXXXX" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/vJlFz5oxG5Q"
+              title="Jay Luna - Llamada Perdida"
+              frameborder="0" allowfullscreen></iframe>
+
+      <iframe src="https://www.youtube.com/embed/dRXkKsWqke8"
+              title="Jay Luna - Party"
+              frameborder="0" allowfullscreen></iframe>
+
+      <iframe src="https://www.youtube.com/embed/XXXXXXXXXXX"
+              title="Jay Luna - Próximo Lanzamiento"
+              frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© <span id="year"></span> Jay Luna Oficial</p>
+    <p>© <span id="year"></span> Jay Luna Oficial — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Scripts globales -->
   <script src="js/year.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
